@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Helper</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script src="./js/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f92010e149.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <header> <h1> Login-Helper </h1></header>
+
+    <main>
+         <form>
+            <!-- Dica: Plugin EMMET. Através do caractere * podemos multiplicar os seletores. Ex: Selection*3 -->
+
+            <section class="inputs-container">
+                <input type="email" placeholder="example@gmail.com">  
+            
+                <!--Dica: Vamos criar um input de senha. Para facilitar a estilização no css vamos criar uma div. Para isso vamos passar 
+                diretamente o . que significa classe e em seguida colocar o nome da classe. ficara assim: .password-container -->
+                <div class="password-container">
+                    <input type="password" id="field-password" class="field-password" placeholder="********">
+                    <i class="fa-solid fa-eye" id="eye" onclick="showPassword()"></i>>
+                    <i class="fa-solid fa-eye-slash" id="eye-slash" onclick="showPassword()"></i>
+                </div>
+            </section>
+
+            <section class="password-infos">
+                <div>
+                    <input type="checkbox">
+                    <span> Lembrar Senha</span>
+                </div>
+
+                <a href="#">Esqueceu sua senha?</a>
+            </section>
+
+            <button id="btn-login">Login</button>
+
+            <section class="links-container">
+                <span> Ou entre com:</span>
+                
+                <!--Dica: Para conteudos iguais em que precisa fazer a mesma modificação para todos use CTRL+D - Selecione a quantidade de x que
+                precisa selecionar e altere -->
+                <aside>
+                    <a href="#"><i class="fa-brands fa-google google"></i> </a>
+                    <a href="#"><i class="fa-brands fa-linkedin linkedin"></i> </a>
+                    <a href="#"><i class="fa-brands fa-facebook facebook"></i></a>
+                </aside>
+            </section>
+
+            <footer>
+                <hr>
+                <span> Ainda não tem uma conta? <a href="#"> Cadastre-se</a> </span>
+            </footer>
+    </form>
+</main>
+
+</body>
+</html>
